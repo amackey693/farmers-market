@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./Home";
-import Schedule from "./Schedule";
-import Produce from "./Produce";
+import ScheduleList from "./ScheduleList";
+import ProduceList from "./ProduceList";
 
 class NavControl extends React.Component {
   constructor(props) {
@@ -36,13 +36,13 @@ class NavControl extends React.Component {
       buttonPage2 = this.produceButtonClick;
       buttonText2 = "See Current Produce";
     } else if (this.state.viewVisibleOnPage === "schedule") {
-      currentlyVisibleView = <Schedule />
+      currentlyVisibleView = <ScheduleList />
       buttonPage1 = this.homeButtonClick;
       buttonText1 = "Home";
       buttonPage2 = this.produceButtonClick;
       buttonText2 = "See Current Produce";
     } else if (this.state.viewVisibleOnPage === "produce") {
-      currentlyVisibleView = <Produce />
+      currentlyVisibleView = <ProduceList />
       buttonPage1 = this.homeButtonClick;
       buttonText1 = "Home";
       buttonPage2 = this.scheduleButtonClick;
