@@ -4,8 +4,17 @@ import ScheduleList from "./ScheduleList";
 import ProduceList from "./ProduceList";
 
 class NavControl extends React.Component {
+  // NavStyle() {
+  //   const navStyle = {
+  //     alignItems: 'center',
+  //     textAlign: 'center',
+  //   }
+  // }
   constructor(props) {
     super(props);
+    this.navStyle = {
+
+    };
     this.state = {
       viewVisibleOnPage: "home"
     }
@@ -50,9 +59,14 @@ class NavControl extends React.Component {
     }
     return (
       <React.Fragment>
-        {currentlyVisibleView}
-        <button onClick={buttonPage1}>{buttonText1}</button>
-        <button onClick={buttonPage2}>{buttonText2}</button>
+        <div style={this.navStyle}>
+          <h2>{this.state.viewVisibleOnPage.toUpperCase()}</h2>
+          <div className="button-wrapper">
+            <button onClick={buttonPage1}>{buttonText1}</button>
+            <button onClick={buttonPage2}>{buttonText2}</button>
+          </div>
+          {currentlyVisibleView}
+        </div>
       </React.Fragment>
     )
   }

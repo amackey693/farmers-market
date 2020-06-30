@@ -1,8 +1,13 @@
 import React from "react";
 
-function Header(){
+function Header() {
+  const headerStyle = {
+    textAlign: 'center',
+  }
   return (
-    <h1>Welcome to Avery's</h1>
+    <div style={headerStyle}>
+      <h1>Welcome to Avery's</h1>
+    </div>
   );
 }
 

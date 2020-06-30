@@ -43,7 +43,6 @@ const marketSchedule = [
 function ScheduleList() {
   return (
     <React.Fragment>
-      <h2>Schedule</h2>
       <hr />
       {marketSchedule.map((schedule, index) =>
         <Schedule
