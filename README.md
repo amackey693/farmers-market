@@ -7,8 +7,6 @@
 
 _This application serves as an introduction to React with create-react-app, components, JSX, and props while building a static site. The farmers market app displays a home page with two buttons - list of seasonal produce & the daily market schedule based off of which button the user clicks it will expand with detailed lists of each. The user will be able to click on each day/month and view detailed information dynamically._
 
-<img src="img/FarmersMarket.png" alt="app diagram">
-
 ![FarmersMarket](img/FarmersMarket.png)
 
 ### Instructions for use:
@@ -17,8 +15,8 @@ _This application serves as an introduction to React with create-react-app, comp
 2. To download the project Directory to your desktop enter the following commands:
 ```
 cd Desktop
-git clone https://github.com/amackey693/help-queue.gi
-cd help-queue
+git clone https://github.com/jhvozdovich/farmers-market.git
+cd farmers-market
 ```
 3. To view the downloaded files, open them in a text editor or IDE of your choice.
 * if you have VSCode for example, when your terminal is within the main project Directory you can open all of the files with the command:
@@ -42,7 +40,7 @@ No bugs have been identified at the time of this update.
 ### Support and Contact Information
 
 Please contact me with any suggestions or questions at jhvozdovich@gmail.com. Thank you for your input!  
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/amackey693/help-queue/issues) here on GitHub._
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/jhvozdovich/farmers-market/issues) here on GitHub._
 
 ### Technologies Used
 
@@ -55,11 +53,11 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 ### Specs
 | Spec | Input | Output |
 | :------------- | :------------- | :------------- |
-| **User can view hard coded tickets on static site** | User Input:"localhost:3000" | Output: “Ticket List is displayed" |
-| **User can request to add ticket and is prompted through three questions before the form is displayed** | User Input:"Add ticket" | Output: “Followed the steps? Asked another pair? Fifteen minutes researching? " |
-| **Pressing "back" returns the user to the ticket list** | User Input:"Back" | Output: “Ticket List" |
-| **A static, nonfunctional form is displayed if all questions are answred yes** | User Input:"localhost:3000" | Output: “Ticket List is displayed" |
-
+| **User can view home** | User Input:"http://localhost:3000/" | Output: “Welcome to the farmer's market" |
+| **User can view schedule** | User Input:"View Schedule" | Output: “M T W R F S S" |
+| **User can view schedule details** | User Input:"Click Monday" | Output: “Monday, "Pioneer Courthouse Square", 10:00am - 2:00pm,  Booth 7C" |
+| **User can view produce by month** | User Input:"View Produce" | Output: “Jan Feb Mar ..." |
+| **User can view month details** | User Input:"Click January" | Output: Selection: "Apples", "Hazelnuts", "Pears", "Garlic", "Mushrooms", "Onions", "Potatoes", "Turnips" |
 #### License
 
 This software is licensed under the MIT license.
